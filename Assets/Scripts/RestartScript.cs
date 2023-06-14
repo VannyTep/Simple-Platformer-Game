@@ -14,6 +14,15 @@ public class RestartScript : MonoBehaviour
 
     void Update()
     {
-        RestartCanvas.SetActive(true);
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            RestartCanvas.SetActive(true);
+            GameObject Player = GameObject.FindGameObjectWithTag("Player");
+            Player.SetActive(false);
+        }
     }
 }
