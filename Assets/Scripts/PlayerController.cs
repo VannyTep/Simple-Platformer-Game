@@ -76,32 +76,29 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (rb2d.velocity.y == 0)
-                {
-                    rb2d.AddForce(Vector2.up * Jump_Speed, ForceMode2D.Impulse);
-                    rb2d.gravityScale = 2;
-                    rb2d.drag = 4;
-                }
+                rb2d.AddForce(Vector2.up * Jump_Speed, ForceMode2D.Impulse);
+                rb2d.gravityScale = 3;
+                rb2d.drag = 4;   
             }
         }
 
-        if (rb2d.velocity.y > 0 && Horizontal_Move > 0)
+        if (Input.GetKeyUp(KeyCode.Space))
         {
-            rb2d.gravityScale = 2;
-            rb2d.drag = 4;
-        }        
+            rb2d.gravityScale = 8;
+            rb2d.drag = 4;  
+        }      
 
-        if (rb2d.velocity.y < 0)
-        {
-            rb2d.drag = 1;
-            rb2d.gravityScale = 5;
-        }
+        // if (rb2d.velocity.y < 0)
+        // {
+        //     rb2d.drag = 1;
+        //     rb2d.gravityScale = 5;
+        // }
 
-        if (rb2d.velocity.y > 0)
-        {
-            rb2d.drag = 1;
-            rb2d.gravityScale = 2;
-        }
+        // if (rb2d.velocity.y > 0)
+        // {
+        //     rb2d.drag = 1;
+        //     rb2d.gravityScale = 2;
+        // }
     }
 
     private bool Ground_Check()
