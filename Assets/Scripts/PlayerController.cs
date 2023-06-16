@@ -61,8 +61,6 @@ public class PlayerController : MonoBehaviour
             IsFacingRight = false;
             Player_Facing_Method();
         }
-
-        Debug.Log(rb2d.velocity.y);
     }
 
     private void Player_Move_Method()

@@ -27,4 +27,8 @@ public class ButtonManager : MonoBehaviour
     {
         
     }
+
+    public void Go_Next_Level(string NextSceneName) {
+        SceneManager.LoadScene(NextSceneName);
+    }
 }
