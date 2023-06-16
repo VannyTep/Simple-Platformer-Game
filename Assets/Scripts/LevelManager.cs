@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    [SerializeField] GameObject WinUIMenu;
     
     // Update is called once per frame
     void Update()
@@ -17,11 +18,10 @@ public class LevelManager : MonoBehaviour
         {
             GameObject Player = GameObject.FindGameObjectWithTag("Player");
 
-            Debug.Log("You have completed the level.");
-            // Display the Win UI
-            // UI must contain next level and the main menu btn
+            WinUIMenu.SetActive(true); // Display the Win UI
             Player.GetComponent<PlayerController>().enabled = false; // Disable Player Movement
 
+            Debug.Log("You have completed the level.");  
         }
     }
 

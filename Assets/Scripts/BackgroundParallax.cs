@@ -9,6 +9,7 @@ public class BackgroundParallax : MonoBehaviour
     public float ParallaxEffect;
     
     private void Start() {
+        Camera = GameObject.FindGameObjectWithTag("MainCamera");
         startPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }

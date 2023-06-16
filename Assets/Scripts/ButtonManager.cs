@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ButtonManager : MonoBehaviour
 {
 
-
     void Start()
     {
         
@@ -23,12 +22,11 @@ public class ButtonManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void MainMenu()
-    {
-        
+    public void MainMenu(string NextSceneName) {
+        SceneManager.LoadScene(NextSceneName);
     }
 
-    public void Go_Next_Level(string NextSceneName) {
+    public void What_Scene_Should_Go(string NextSceneName) {
         SceneManager.LoadScene(NextSceneName);
     }
 }
