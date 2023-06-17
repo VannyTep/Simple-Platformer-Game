@@ -104,11 +104,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c5ebc15499aaff244b5650a08eb6444b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &8719864878767997284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 500
-  Jump_Speed: 35
+  Jump_Speed: 38
   Horizontal_Move: 0
-  GroundCheck_Point: {fileID: 0}
+  GroundCheck_Point: {fileID: 8708440192789187660}
   GroundCheck_Range: 0.5
   WhatIsForGround:
     serializedVersion: 2
