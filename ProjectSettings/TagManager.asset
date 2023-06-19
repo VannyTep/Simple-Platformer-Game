@@ -11,7 +11,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Traps
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: BG
     uniqueID: 2759277229
+    locked: 0
+  - name: Trap
+    uniqueID: 3197007897
     locked: 0
   - name: Ground-Tile
     uniqueID: 814010069
